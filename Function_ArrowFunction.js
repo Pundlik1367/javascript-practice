@@ -35,4 +35,12 @@ const processName = (name, greetFunction) => {
 }
 console.log(processName("Rohan", greet_message3));
 
+// function inside another function.
 
+const outerFunction = (name) => {
+    const innerFunction = (name) => {
+        return `Hello, ${name}!`;
+    }   
+    return innerFunction(name);
+}
+console.log(outerFunction("Pundlikk"));
